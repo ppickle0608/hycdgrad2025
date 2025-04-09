@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Test Project 1",
+    "category": "UIUX",
+    "thumbnail": "assets/thmb.png",
+    "link": "#projects/work1"
+  },
+  {
+    "title": "Test Project 2",
+    "category": "Brand",
+    "thumbnail": "assets/thmb.png",
+    "link": "#projects/work2"
+  },
+  {
+    "title": "Test Project 3",
+    "category": "Character",
+    "thumbnail": "assets/thmb.png",
+    "link": "#projects/work3"
+  },
+  {
+    "title": "Test Project 4",
+    "category": "Brand",
+    "thumbnail": "assets/thmb.png",
+    "link": "#projects/work4"
+  }
+]

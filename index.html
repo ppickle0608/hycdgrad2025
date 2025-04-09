@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graduation Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fixed Header -->
+  <header>
+    <div class="top-bar">
+      <img src="assets/logoType.png" alt="Logo" class="logo" onclick="navigateTo('main')" />
+      <nav class="nav-links">
+        <button onclick="navigateTo('projects')">Projects</button>
+        <button onclick="navigateTo('designers')">Designers</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="content">
+    <!-- Content will be loaded here dynamically -->
+  </main>
+  <div id="mouse-bubbles"></div>
+
+
+  <script src="scripts/spa.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <script src="scripts/projects.js"></script>
+  <script src="scripts/designers.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="scripts/mouseBubbles.js"></script>
+  <script src="scripts/art2.js"></script>
+  <script>
+    runMouseBubbles();
+  </script>
+
+
+
+</body>
+</html>
+
+<!-- <script src="scripts/layout.js"></script> -->
