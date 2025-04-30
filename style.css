@@ -4,18 +4,12 @@
   cursor: default !important;
 }
 
-/* 필요시 다른 hover 요소도 여기에 추가 */
-
-
-
 /* 전체 초기화 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 /* 배경과 글씨 기본 설정 */
 body {
@@ -60,8 +54,8 @@ header {
 /* 좌측 버튼 메뉴 */
 .category-menu {
   position: fixed;
-  top: 300px; /* 헤더 아래 약간 떨어진 위치 */
-  left: 40px; /* 본문 마진보다 바깥으로 */
+  top: 300px;
+  left: 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -83,7 +77,6 @@ header {
 .category-menu button:hover {
   background-color: #ddd;
 }
-
 
 /* 네비게이션 버튼들 */
 .nav-links button {
@@ -109,8 +102,7 @@ main {
 
 /* 하단 마진 */
 h2 {
-  
-  margin-bottom: 60px; /* 원하는 만큼 조절 */
+  margin-bottom: 60px;
 }
 
 /* 공통 썸네일 박스 */
@@ -121,7 +113,7 @@ h2 {
   justify-content: center;
   padding: 0 clamp(20px, 5vw, 100px);
   max-width: 1600px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 /* 반응형 그리드 설정 */
@@ -162,6 +154,7 @@ h2 {
   justify-content: center;
   text-decoration: none;
   color: inherit;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .thumbnail-box img {
@@ -171,18 +164,15 @@ h2 {
   margin-bottom: 30px;
 }
 
-.thumbnail-box {
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
 .thumbnail-box:hover {
   transform: scale(1.05);
-  background-color: #f5f5f5; /* 원하는 색상으로 조정 가능 */
+  background-color: #f5f5f5;
 }
 
+/* 프로젝트 상세 페이지 */
 .project-detail {
   display: grid;
-  grid-template-columns: 1fr 300px; /* 좌측은 유동적인 공간, 우측은 고정 너비 300px */
+  grid-template-columns: 1fr 300px;
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
@@ -190,22 +180,26 @@ h2 {
 }
 
 .work-content {
-  /* 중앙 작업물 영역 스타일 */
+  /* 작업물 영역 */
 }
 
 .designer-info {
   background-color: #f0f0f0;
   padding: 20px;
   border: 1px solid #ccc;
+  align-self: start; /* ✅ 이 줄 추가 */
 }
 
+.designer-info img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
-/* ------------------ */
-
-/* 디자이너 상세 페이지 레이아웃 */
+/* 디자이너 상세 페이지 */
 .designer-detail {
   display: grid;
-  grid-template-columns: 300px 1fr;  /* 좌측: 고정 300px, 우측: 나머지 공간 */
+  grid-template-columns: 300px 1fr;
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
@@ -257,8 +251,7 @@ h2 {
   background-color: #fff;
 }
 
-
-/* ------------------ 모바일 대응 시작 ------------------ */
+/* ------------------ 모바일 대응 ------------------ */
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
@@ -311,7 +304,6 @@ h2 {
     padding: 10px 14px;
   }
 
-  /* 썸네일 그리드 설정 */
   .thumbnail-grid {
     display: grid;
     gap: 14px;
@@ -325,7 +317,6 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* 썸네일 박스: 고정 사이즈 초기화 + 비율 적용 */
   .thumbnail-box {
     width: 100% !important;
     height: auto !important;

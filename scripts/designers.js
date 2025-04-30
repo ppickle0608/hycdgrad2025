@@ -19,13 +19,17 @@ function displayDesigners(designers) {
   grid.innerHTML = "";
 
   designers.forEach((designer) => {
+    const designerId = designer.link.split("/")[1]; // e.g., designer1
+    const imagePath = `artworks/${designerId}/1.png`;
+
     const box = document.createElement("a");
     box.href = designer.link;
     box.className = "thumbnail-box";
     box.innerHTML = `
-      <img src="${designer.thumbnail}" alt="${designer.name}" />
+      <img src="${imagePath}" alt="${designer.name}" onerror="this.style.display='none';" />
       <p>${designer.name}</p>
     `;
     grid.appendChild(box);
   });
 }
+

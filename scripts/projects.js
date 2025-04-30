@@ -29,8 +29,10 @@ function displayProjects(projects) {
     const box = document.createElement("a");
     box.href = proj.link;
     box.className = "thumbnail-box";
+    const id = proj.link.match(/work(\d+)/)?.[1];
+    const thumbnailPath = `assets/artworks/thumbnails/${id}.png`;
     box.innerHTML = `
-      <img src="${proj.thumbnail}" alt="${proj.title}" />
+      <img src="${thumbnailPath}" alt="${proj.title}" />
       <p>${proj.title}</p>
     `;
     grid.appendChild(box);

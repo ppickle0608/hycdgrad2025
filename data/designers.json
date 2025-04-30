@@ -1,22 +1,14 @@
 [
   {
     "name": "Designer 1",
-    "thumbnail": "assets/thmb.png",
     "link": "#designers/designer1"
   },
   {
     "name": "Designer 2",
-    "thumbnail": "assets/thmb.png",
-    "link": "#designers/designer1"
+    "link": "#designers/designer2"
   },
   {
     "name": "Designer 3",
-    "thumbnail": "assets/thmb.png",
-    "link": "#designers/designer1"
-  },
-  {
-    "name": "Designer 4",
-    "thumbnail": "assets/thmb.png",
-    "link": "#designers/designer1"
+    "link": "#designers/designer3"
   }
 ]
